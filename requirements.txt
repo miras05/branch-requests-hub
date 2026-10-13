@@ -1,0 +1,17 @@
+# Telegram — extra [job-queue] ОБЯЗАТЕЛЕН: без него app.job_queue = None
+# и не работают ни автодайджест, ни опрос почты и Bitrix24
+python-telegram-bot[job-queue]==22.5
+
+# База данных
+psycopg2-binary==2.9.12
+
+# AI — Groq, бесплатный тариф, модель llama-3.3-70b-versatile
+groq==1.0.0
+
+# HTTP — для Bitrix24 REST API
+requests==2.32.5
+
+# Конфигурация
+python-dotenv==1.2.1
+
+# Почта работает на stdlib (imaplib + email) — отдельный пакет не нужен
